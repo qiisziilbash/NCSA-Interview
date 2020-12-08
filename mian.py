@@ -13,7 +13,7 @@ vowels = 'aeiou'
 result = ''
 for char in word:
     if char in vowels:
-        # replace vowel chars with it's rank in alphabet
+        # replace vowel chars y their corresponding order number in alphabetical sequence
         result += str(ord(char) - ord('a') + 1)
     else:
         result += char
