@@ -11,15 +11,20 @@ word = 'National Center for Supercomputing Applications'
 vowels = 'aeiou'
 
 result = ''
+
 for char in word:
     if char in vowels:
-        # replace vowel chars y their corresponding order number in alphabetical sequence
+        # replace vowel characters their corresponding order number in alphabetical sequence
         result += str(ord(char) - ord('a') + 1)
     else:
         result += char
 
 print(result)
 
+consonants_counts = 0
 
+for char in word:
+    if char not in vowels:
+        consonants_counts +=1
 
-
+print('Total number of consonants in "' + word + '": ' + str(consonants_counts))
