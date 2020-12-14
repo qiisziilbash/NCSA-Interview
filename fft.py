@@ -16,7 +16,7 @@ plt.ylabel('value')
 
 wave_fft = fftpack.fft(noisy_wave)
 wave_fft_amp = np.abs(wave_fft)
-wave_fft_power = wave_fft_amp ** 2
+wave_fft_power = wave_fft_amp ** 2 
 wave_fft_angle = np.angle(wave_fft)
 frequencies = fftpack.fftfreq(noisy_wave.size, d=step)
 
